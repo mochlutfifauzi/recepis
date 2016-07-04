@@ -13,6 +13,9 @@
 		A7BD69091D2A4DD9006BBFB9 /* Receipz_Apps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7BD69071D2A4DD9006BBFB9 /* Receipz_Apps.xcdatamodeld */; };
 		A7BD690B1D2A4DD9006BBFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BD690A1D2A4DD9006BBFB9 /* Assets.xcassets */; };
 		A7BD690E1D2A4DD9006BBFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BD690C1D2A4DD9006BBFB9 /* LaunchScreen.storyboard */; };
+		A7BD69211D2A5E77006BBFB9 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD691F1D2A5E77006BBFB9 /* Recipe+CoreDataProperties.swift */; };
+		A7BD69221D2A5E77006BBFB9 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD69201D2A5E77006BBFB9 /* Recipe.swift */; };
+		A7BD69241D2A6499006BBFB9 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BD69231D2A6499006BBFB9 /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		A7BD690A1D2A4DD9006BBFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7BD690D1D2A4DD9006BBFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7BD690F1D2A4DD9006BBFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7BD69181D2A5E3A006BBFB9 /* Receipz Apps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Receipz Apps-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7BD691F1D2A5E77006BBFB9 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A7BD69201D2A5E77006BBFB9 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		A7BD69231D2A6499006BBFB9 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +49,7 @@
 			children = (
 				A7BD68FF1D2A4DD9006BBFB9 /* Receipz Apps */,
 				A7BD68FE1D2A4DD9006BBFB9 /* Products */,
+				A7BD69181D2A5E3A006BBFB9 /* Receipz Apps-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +64,10 @@
 		A7BD68FF1D2A4DD9006BBFB9 /* Receipz Apps */ = {
 			isa = PBXGroup;
 			children = (
+				A7BD69171D2A5DE3006BBFB9 /* Controller */,
+				A7BD69161D2A5DDE006BBFB9 /* View */,
+				A7BD69151D2A5DD6006BBFB9 /* Model */,
 				A7BD69001D2A4DD9006BBFB9 /* AppDelegate.swift */,
-				A7BD69021D2A4DD9006BBFB9 /* ViewController.swift */,
 				A7BD69041D2A4DD9006BBFB9 /* Main.storyboard */,
 				A7BD690A1D2A4DD9006BBFB9 /* Assets.xcassets */,
 				A7BD690C1D2A4DD9006BBFB9 /* LaunchScreen.storyboard */,
@@ -65,6 +75,31 @@
 				A7BD69071D2A4DD9006BBFB9 /* Receipz_Apps.xcdatamodeld */,
 			);
 			path = "Receipz Apps";
+			sourceTree = "<group>";
+		};
+		A7BD69151D2A5DD6006BBFB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD691F1D2A5E77006BBFB9 /* Recipe+CoreDataProperties.swift */,
+				A7BD69201D2A5E77006BBFB9 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A7BD69161D2A5DDE006BBFB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD69231D2A6499006BBFB9 /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A7BD69171D2A5DE3006BBFB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD69021D2A4DD9006BBFB9 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BD69031D2A4DD9006BBFB9 /* ViewController.swift in Sources */,
+				A7BD69211D2A5E77006BBFB9 /* Recipe+CoreDataProperties.swift in Sources */,
 				A7BD69011D2A4DD9006BBFB9 /* AppDelegate.swift in Sources */,
+				A7BD69241D2A6499006BBFB9 /* RecipeCell.swift in Sources */,
 				A7BD69091D2A4DD9006BBFB9 /* Receipz_Apps.xcdatamodeld in Sources */,
+				A7BD69221D2A5E77006BBFB9 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +293,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Receipz Apps/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "testview.Receipz-Apps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Receipz Apps-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -266,10 +307,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Receipz Apps/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "testview.Receipz-Apps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Receipz Apps-Bridging-Header.h";
 			};
 			name = Release;
 		};

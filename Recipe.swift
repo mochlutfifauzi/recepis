@@ -8,10 +8,18 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 @objc(Recipe)
 class Recipe: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    func setRecipeImg(img: UIImage) {
+    let data = UIImagePNGRepresentation(img)
+    self.image = data
+    }
 
+    func getRecipeImg() -> UIImage {
+        let img = UIImage(data: self.image!)!
+        return img
+    }
 }
