@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
     var recipes = [Recipe]()
+    var fetchResultsController = NSFetchedResultsController!.self
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
